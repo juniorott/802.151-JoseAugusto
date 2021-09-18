@@ -4,58 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/contas"
-        android:layout_width="161dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="660dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="10dp"
-        android:text="Contas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".main.MainActivity">
 
     <TextView
         android:id="@+id/textoContas"
-        android:layout_width="382dp"
-        android:layout_height="111dp"
+        android:layout_width="380dp"
+        android:layout_height="43dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginBottom="17dp"
         app:layout_constraintBottom_toTopOf="@+id/botao1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contas" />
-
-    <Button
-        android:id="@+id/botaoac"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="10dp"
-        android:text="AC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botaodiv" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/botao1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:onClick="operacao"
         android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/botao4"
-        app:layout_constraintEnd_toStartOf="@+id/botao2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textoContas" />
 
@@ -63,14 +34,10 @@
         android:id="@+id/botao2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
-        android:text="2"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao5"
-        app:layout_constraintEnd_toStartOf="@+id/botao3"
+        android:text="2"
         app:layout_constraintStart_toEndOf="@+id/botao1"
         app:layout_constraintTop_toBottomOf="@+id/textoContas" />
 
@@ -78,27 +45,21 @@
         android:id="@+id/botao3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="10dp"
-        android:text="3"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao6"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="3"
         app:layout_constraintStart_toEndOf="@+id/botao2"
-        app:layout_constraintTop_toBottomOf="@+id/textoContas"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textoContas" />
 
     <Button
         android:id="@+id/botao4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_marginStart="20dp"
-        android:text="4"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao7"
-        app:layout_constraintEnd_toStartOf="@+id/botao5"
+        android:text="4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botao1" />
 
@@ -106,14 +67,10 @@
         android:id="@+id/botao5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="5"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao8"
-        app:layout_constraintEnd_toStartOf="@+id/botao6"
+        android:text="5"
         app:layout_constraintStart_toEndOf="@+id/botao4"
         app:layout_constraintTop_toBottomOf="@+id/botao2" />
 
@@ -121,11 +78,10 @@
         android:id="@+id/botao6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:text="6"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao9"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="6"
         app:layout_constraintStart_toEndOf="@+id/botao5"
         app:layout_constraintTop_toBottomOf="@+id/botao3" />
 
@@ -133,11 +89,10 @@
         android:id="@+id/botao7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="7"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botaomais"
-        app:layout_constraintEnd_toStartOf="@+id/botao8"
+        android:text="7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botao4" />
 
@@ -145,14 +100,10 @@
         android:id="@+id/botao8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="8"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botao0"
-        app:layout_constraintEnd_toStartOf="@+id/botao9"
+        android:text="8"
         app:layout_constraintStart_toEndOf="@+id/botao7"
         app:layout_constraintTop_toBottomOf="@+id/botao5" />
 
@@ -160,11 +111,10 @@
         android:id="@+id/botao9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="9"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botaomenos"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="9"
         app:layout_constraintStart_toEndOf="@+id/botao8"
         app:layout_constraintTop_toBottomOf="@+id/botao6" />
 
@@ -172,11 +122,10 @@
         android:id="@+id/botaomais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="+"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacaoSoma"
-        app:layout_constraintBottom_toTopOf="@+id/botaomult"
-        app:layout_constraintEnd_toStartOf="@+id/botao0"
+        android:text="+"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botao7" />
 
@@ -184,14 +133,10 @@
         android:id="@+id/botao0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="0"
         android:onClick="operacao"
-        app:layout_constraintBottom_toTopOf="@+id/botaodiv"
-        app:layout_constraintEnd_toStartOf="@+id/botaomenos"
+        android:text="0"
         app:layout_constraintStart_toEndOf="@+id/botaomais"
         app:layout_constraintTop_toBottomOf="@+id/botao8" />
 
@@ -199,24 +144,21 @@
         android:id="@+id/botaomenos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:text="-"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacaoSubt"
-        app:layout_constraintBottom_toTopOf="@+id/botaoresult"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/botao0"
-        app:layout_constraintTop_toBottomOf="@+id/botao9" />
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/botaomult"
+        app:layout_constraintTop_toBottomOf="@+id/botao0" />
 
     <Button
         android:id="@+id/botaomult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:layout_marginStart="10dp"
-        android:text="*"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
         android:onClick="operacaoMult"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/botaodiv"
+        android:text="*"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botaomais" />
 
@@ -224,43 +166,44 @@
         android:id="@+id/botaodiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:text="/"
         android:onClick="operacaoDiv"
-        app:layout_constraintBottom_toTopOf="@+id/botaoac"
-        app:layout_constraintEnd_toStartOf="@+id/botaoresult"
-        app:layout_constraintStart_toEndOf="@+id/botaomult"
-        app:layout_constraintTop_toBottomOf="@+id/botao0" />
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/botao0"
+        app:layout_constraintTop_toBottomOf="@+id/botao9" />
 
     <Button
         android:id="@+id/botaoresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="botaoResultado"
         android:text="="
-        android:onClick="resultado"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/botaodiv"
-        app:layout_constraintTop_toBottomOf="@+id/botaomenos" />
+        app:layout_constraintStart_toEndOf="@+id/botaomenos"
+        app:layout_constraintTop_toBottomOf="@+id/botaodiv" />
 
     <Button
         android:id="@+id/botaovoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="130dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="38dp"
-        android:text="voltar"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="10dp"
         android:onClick="voltarComeco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/botaoac"
+        android:text="voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaomenos" />
+
+    <Button
+        android:id="@+id/botaoac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="apagarConteudo"
+        android:text="AC"
+        app:layout_constraintStart_toEndOf="@+id/botaovoltar"
         app:layout_constraintTop_toBottomOf="@+id/botaoresult" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
