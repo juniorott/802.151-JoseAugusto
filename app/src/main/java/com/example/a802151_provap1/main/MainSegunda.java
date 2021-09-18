@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.a802151_provap1.R;
+import com.example.a802151_provap1.crud.Dados;
 import com.example.a802151_provap1.domain.Produto;
 import com.example.a802151_provap1.main.MainActivity;
 
@@ -88,6 +89,7 @@ public class MainSegunda extends AppCompatActivity {
         resultado12345.setText("");
     }
     public void botaoResultado(View view){
+        produto = new Produto();
         switch (caso){
             case 1:
                 Salvar2 = Numero;
@@ -113,5 +115,9 @@ public class MainSegunda extends AppCompatActivity {
                 resultado12345.setText(ResConta.toString());
                 break;
         }
+        produto.setValoresGuardados(ResConta.toString());
+        Dados.salvar(produto);
+        setResult(RESULT_OK);
+        finish();
     }
 }

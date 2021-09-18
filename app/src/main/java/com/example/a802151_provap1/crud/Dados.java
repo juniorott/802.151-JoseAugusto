@@ -19,9 +19,9 @@ public class Dados {
             dados.add(o);
         }
     }
-    public static void salvar(Collection o){
+    /*public static void salvar(Collection o){
         dados.addAll(o);
-    }
+    }*/
     public static List getLista(){
         return dados;
     }

@@ -19,4 +19,9 @@ public class Produto {
     public void setValoresGuardados(String valoresGuardados) {
         this.valoresGuardados = valoresGuardados;
     }
+
+    @Override
+    public String toString() {
+        return valoresGuardados;
+    }
 }
